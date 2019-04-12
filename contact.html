@@ -15,6 +15,18 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<script>
+$(document).ready (function(){
+            $("#success-alert").hide();
+            $("#myWish").click(function showAlert() {
+			document.getElementById("myForm").reset();
+                $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+               $("#success-alert").slideUp(500);
+			    
+                });   
+            });
+ });
+	</script>
   </head>
 
   <body>
@@ -36,7 +48,6 @@
             <li><a class="menu-inicio" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="agenda.html" class="menu-agenda">Agenda</a></li>
       			<li><a href="category.html" class="menu-destaque">Categorias</a></li>
-      			<li><a href="#contact" class="menu-destaque">Divulgue</a></li>
       			<li class="active"><a href="contact.html" class="menu-maiseventos">Contato</a></li>
       			<li><a href="about.html" class="menu-sobre">Sobre</a></li>
           </ul>
@@ -46,6 +57,9 @@
 
 
 <div class="container">
+<div class="alert alert-success" role="alert" id="success-alert">
+	Formulário enviado com sucesso.
+</div>
   <section id="contact">
   			<div class="section-content">
   				<h1 class="section-header">Entre <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> em contato conosco</span></h1>
@@ -53,7 +67,7 @@
   			</div>
   			<div class="contact-section">
   			<div class="container">
-  				<form>
+  				<form id="myForm">
   					<div class="col-md-6 form-line">
   			  			<div class="form-group">
   			  				<label for="exampleInputUsername">Seu Nome</label>
@@ -75,7 +89,8 @@
   			  			</div>
   			  			<div>
 
-  			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Enviar</button>
+  			  				<button type="button" class="btn btn-primary"><a href="javascript:;" id="myWish" style="color:#FFFFFF">Enviar</a></button>
+							<button type="reset" class="btn btn-secondary">Limpar</button>
   			  			</div>
 
   					</div>

@@ -15,6 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/category.css" rel="stylesheet">
   </head>
 
   <body>
@@ -36,11 +37,10 @@
             <li class="active"><a class="menu-inicio" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="agenda.html" class="menu-agenda">Agenda</a></li>
       			<li><a href="category.html" class="menu-destaque">Categorias</a></li>
-      			<li><a href="#contact" class="menu-destaque">Divulgue</a></li>
       			<li><a href="contact.html" class="menu-maiseventos">Contato</a></li>
       			<li><a href="about.html" class="menu-sobre">Sobre</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -48,7 +48,7 @@
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: 0 auto; width: 100%;">
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="0"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
@@ -56,15 +56,15 @@
 
     <div class="carousel-inner" >
       <div class="item active" >
-        <img src="images/carousel/quinta.jpg" alt="Los Angeles" style="height:500px; width:100%;">
+        <img src="images/carousel/quinta.jpg" alt="Los Angeles" style="height:350px; width:100%;">
       </div>
 
       <div class="item" >
-        <img src="images/carousel/sexta.jpg" alt="Chicago" style="height:500px; width:100%;">
+        <img src="images/carousel/sexta.jpg" alt="Chicago" style="height:350px; width:100%;">
       </div>
 
       <div class="item" >
-        <img src="images/carousel/ny.jpg" alt="New york" style="height:500px; width:100%;">
+        <img src="images/carousel/ny.jpg" alt="New york" style="height:350px; width:100%;">
       </div>
     </div>
 
@@ -79,21 +79,92 @@
   </div>
 </div>
 
+<div class="container">
+<br/>
+<h2>Próximos Eventos</h2>
+    <br>
+    <div class="row">
+  	<!--team-3-->
+  	<div class="col-lg-4">
+  	<div class="our-team-main">
 
-<div class="container" style="padding-top:50px">
-<fieldset><h1>Agenda de Eventos</h1></fieldset>
-<div class="card" style="width: 100%;">
-  <img class="card-img-top" src="images/carousel/quinta.jpg" alt="Card image cap" style="width:25%; height:25%;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+  	<div class="team-front">
+  	<img src="images/10082.jpg" class="img-fluid" />
+  	<h3>Eduardo Costa</h3>
+  	<p>Sertanejo</p>
+  	</div>
+
+  	<div class="team-back">
+  	<span>
+      <h4 class="text-center">Eduardo Costa </h4>
+      <p> Sexta, 26 de Abril - Abertura: 20:00 - Início: 22:30  </p>
+      <p>Local: Restaurante Florestal Demarchi</p>
+      <p>Av. Maria Servidei Demarchi, 2.998 - Demarchi - S. B. do Campo - SP  </p>
+      <p>A partir de R$ 60,00 + Taxas </p>
+  	</span>
+  	</div>
+
+  	</div>
+  	</div>
+  	<!--team-3-->
+
+  	<!--team-4-->
+  	<div class="col-lg-4">
+  	<div class="our-team-main">
+
+  	<div class="team-front">
+  	<img src="images/10326.jpg" class="img-fluid" />
+  	<h3>Especial Dia das Mães com Chitãozinho & Xororó</h3>
+  	<p>Sertanejo</p>
+  	</div>
+
+  	<div class="team-back">
+  	<span>
+      <h4 class="text-center">Especial Dia das Mães com Chitãozinho & Xororó </h4>
+      <p>Sexta, 03 de Maio - Abertura: 20:00  </p>
+      <p>Local: Clube Esportivo da Penha </p>
+      <p>Rua Capitão João Cesário, 354 - Penha de França - São Paulo - SP  </p>
+      <p>A partir de R$ 60,00 + Taxas </p>
+  	</span>
+  	</div>
+
+  	</div>
+  	</div>
+  	<!--team-4-->
+
+  	<!--team-5-->
+  	<div class="col-lg-4">
+  	<div class="our-team-main">
+
+  	<div class="team-front">
+  	<img src="images/10294.jpg" class="img-fluid" />
+  	<h3>Gustavo Moura & Rafael</h3>
+  	<p>Sertanejo</p>
+  	</div>
+
+  	<div class="team-back">
+  	<span>
+      <h4 class="text-center">Gustavo Moura & Rafael </h4>
+      <p>  Sexta, 09 de Maio - Abertura: 20:00  </p>
+      <p>Local: Vila Country </p>
+      <p>Av. Francisco Matarazzo, 774 - Água Branca - São Paulo - SP   </p>
+      <p>A partir de R$ 60,00 + Taxas </p>
+  	</span>
+  	</div>
+
+  	</div>
+  	</div>
+  	<!--team-5-->
+
+
+
+
+  	</div>
+	
 </div>
 
 <!-- Footer -->
-<footer class="footer navbar-fixed-bottom" style="background-color:#f8f8f8 !important">
+<footer class="footer navbar-bottom" style="background-color:#f8f8f8 !important">
       <br>
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
       <a href="#"> Observer Eventos</a>
